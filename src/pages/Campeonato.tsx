@@ -53,7 +53,7 @@ function Menu() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 bg-white">
-                    {tabela.map((posicao) => (
+                    {tabela.map((posicao : any) => (
                       <tr key={posicao.time.time_id}>
                         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                           {posicao.posicao}
