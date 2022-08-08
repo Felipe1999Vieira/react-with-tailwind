@@ -4,13 +4,15 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Login from '../pages/Login';
+import Menu from '../pages/Menu';
+import Campeonato from '../pages/Campeonato';
 
 function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Menu />} />
+        <Route path="/campeonato/:id" element={<Campeonato />} />
       </Routes>
     </BrowserRouter>
   );
