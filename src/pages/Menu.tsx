@@ -28,7 +28,7 @@ function Menu() {
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">{campeonato.nome}</h2>
                 <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg h-30 w-30" src={campeonato.logo} alt="" />
+                  <img className="inline-block h-30 w-30 my-5" src={campeonato.logo} alt="" />
                 </div>
                 <p className="mt-4 text-sm text-gray-500">{campeonato.tipo}</p>
                 <a
