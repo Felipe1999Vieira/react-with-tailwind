@@ -2,6 +2,9 @@ import {
   useEffect, useState,
 } from 'react';
 import { toast } from 'react-toastify';
+import {
+  Link,
+} from 'react-router-dom';
 import api from '../services/api';
 
 function Menu() {
@@ -31,12 +34,10 @@ function Menu() {
                   <img className="inline-block h-30 w-30 my-5" src={campeonato.logo} alt="" />
                 </div>
                 <p className="mt-4 text-sm text-gray-500">{campeonato.tipo}</p>
-                <a
-                  href={`/campeonato/${campeonato.campeonato_id}`}
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-                >
-                  Visualizar
-                </a>
+
+                <Link to={`/campeonato/${campeonato.campeonato_id}`}>Users</Link>
+
+                Visualizar
               </div>
             </div>
           ))}
